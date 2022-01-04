@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -11,7 +12,8 @@ import { NgxEditorModule } from 'ngx-editor';
   ],
   imports: [
     BrowserModule,
-    NgxEditorModule
+    NgxEditorModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
