@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { NgxEditorModule } from 'ngx-editor';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { NgxEditorModule } from 'ngx-editor';
   imports: [
     BrowserModule,
     NgxEditorModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

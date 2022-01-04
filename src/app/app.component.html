@@ -1,12 +1,23 @@
 <h1>WYSIWYG Editor Test</h1>
 <br />
 
-<div class="NgxEditor__Wrapper">
-  <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
-  <ngx-editor
-    [editor]="editor"
-    [ngModel]="html"
-    [disabled]="false"
-    [placeholder]="'Type here...'"
-  ></ngx-editor>
+
+
+<div class="half-width">
+  <h1><a href="https://github.com/sibiraj-s/ngx-editor" target="_blank">ngx-editor</a></h1>
+  <div class="NgxEditor__Wrapper">
+    <ngx-editor-menu [editor]="editor"> </ngx-editor-menu>
+    <ngx-editor
+      [editor]="editor"
+      [(ngModel)]="html"
+      [disabled]="false"
+      
+      [placeholder]="'Type here...'"
+    ></ngx-editor>
+  </div>
+  <h3>Output:</h3>
+  <p>{{ html }}</p>
+</div>
+<div class="half-width">
+
 </div>
